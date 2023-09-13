@@ -5,8 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src="https://cdn-icons-png.flaticon.com/128/807/807303.png"></img>
         <p>
-          GetBuzzedBro.
+          Get Buzzed website under construction.
         </p>
       </header>
     </div>
