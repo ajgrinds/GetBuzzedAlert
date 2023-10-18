@@ -184,7 +184,7 @@ export default function Page() {
               // background-size takes height and width but shorthand is one value used for both
               backgroundSize: "cover",
               // background-position options include center, cover, and more: https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
-              backgroundPosition: "bottom -220px center",
+              backgroundPosition: "bottom 20% center",
               backgroundRepeat: "no-repeat",
             }}
           >
@@ -196,6 +196,7 @@ export default function Page() {
                 color="text.priamry"
                 fontWeight='fontWeightMedium'
                 sx={{ pt: 5 }}
+                maxWidth="100%"
               >
                 Get Buzzed
               </Typography>
@@ -277,7 +278,7 @@ export default function Page() {
             Our Story
           </Typography>
                 <Grid container sx={{ pt:"0.5%" }}>
-          <Grid item key="form" md={6} sx={{ pl:"3%", pr:"0.5%" }}>
+          <Grid item key="form" md={6} sx={{ pl:"2%", pr:"2%" }}>
           {aboutUs.map((line) => (
             <Typography align='right' variant="h6" color="white" style={{ margin: "0px 0px 4% 0px", textShadow: "1px 1px 1px black"}}>{ line }</Typography>
           ))}
@@ -339,7 +340,7 @@ export default function Page() {
         </div>
         <div id='contact' style={{ margin: "0px 0px 1% 0px" }}>
         <Grid container>
-        <Grid item key="title" md={6} sx={{ pr:"0.5%", pl:"4%", pt:"0.5%" }}>
+        <Grid item key="title" md={6} sx={{ pr:"2%", pl:"4%", pt:"0.5%" }}>
           <Typography
          align="right"
             component="h3"
@@ -353,7 +354,7 @@ export default function Page() {
           </Typography>
           <Typography align='right' variant="h6" color="white" style={{ margin: "0px 0px 5% 0px", textShadow: "0px 1px black" }}>{ contactUsDescription }</Typography>
           </Grid>
-        <Grid item key="title" md={6} sx={{ pr:"5%", pl:"0.5%", pt:"0.5%" }}>
+        <Grid item key="title" md={6} sx={{ pr:"5%", pl:"2%", pt:"1.5%" }}>
                   <form action={FORM_ENDPOINT} onSubmit={ handleSubmit }  method="POST" >
           <Grid container spacing={1} justifyContent='center'>
               <Grid item key="name" md={4}>
@@ -385,7 +386,7 @@ export default function Page() {
                 <textarea
                   placeholder="How can we help you?"
                   name="message"
-                  style={{ height: "100%", margin:"0px 0px 16% 0px", resize:"none" }}
+                  style={{ height: "200px", resize:"none" }}
                   required
                 />
               </Grid>
