@@ -37,8 +37,8 @@ import ManOnCouch from './images/man_on_couch_with_woman_watering.jpeg';
 import ManInBed from './images/man_in_bed_with_tv_and_woman.jpeg';
 import WomanReading from './images/woman_reading.jpeg';
 import WomanWatering from './images/woman_watering.jpeg';
-
-import ContactUsPic from './images/blake-on-stairs.jpeg';
+import BlakeOnStairs from './images/blake-on-stairs.jpeg';
+import Corvette from './images/getting_out_corvette.jpeg';
 
 function Copyright() {
   return (
@@ -82,7 +82,9 @@ const aboutUsImages = [
   new Images("Man With Remote", ManInBed),
   new Images("Woman Outside", WomanWatering),
   new Images("Woman Reading", WomanReading),
-  new Images("Man On Couch", ManOnCouch)
+  new Images("Man On Couch", ManOnCouch),
+  new Images("Blake On Stairs", BlakeOnStairs),
+  new Images("Getting Out Of The Corvette", Corvette)
   ]
 
 const headerSlogan = "Instant, wrist-to-wrist, in-home, reliable communication from caretaker to recipients."
@@ -177,7 +179,6 @@ export default function Page() {
           <Box
             style={{
               height:770,
-              margin: "0px 0px -40px 0px",
 
               backgroundImage: `url(${HomeImage})`,
               // background-size takes height and width but shorthand is one value used for both
@@ -213,30 +214,29 @@ export default function Page() {
             align="center"
             color="white"
             fontWeight='fontWeightMedium'
-            sx={{ pt:10, textShadow: "0px 1px black"}}
+            sx={{ pt:"1%", textShadow: "0px 1px black" }}
           >
             The Product
           </Typography>
-          <Typography component="h6" variant="h6" align='center' color="white" sx={{ px:22 }} style={{ textShadow: "1px 1px 1px black" }}>
+          <Typography component="h6" variant="h6" align='center' color="white" sx={{ px:"7%" }} style={{ textShadow: "1px 1px 1px black" }}>
             { productDescription }
           </Typography>
-          <Container sx={{ py: 3, px:4, bgcolor: 'background' }} maxWidth='xxl'>
-            <Grid container spacing={4} justifyContent='center' sx={{ px: 30 }}>
+          <Container sx={{ py: "1.5%", px:"3%", bgcolor: 'background' }} maxWidth='xxl'>
+            <Grid container spacing={4} justifyContent='center' sx={{ px: "5%" }}>
                 <Grid item key="double" xs={12} sm={6} md={6}>
                   <Card
                     sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                   >
                     <CardContent sx={{ flexGrow: 1 }}>
-                      <Typography variant="h6" sx={{ fontSize:35 }} color="text.secondary">Two Paired Wristbands - $99</Typography>
-                      <Typography color="text.secondary" sx={{ fontSize:15 }}>
+                      <Typography variant="h6" sx={{ fontSize:"250%" }} color="text.secondary">Two Paired Wristbands - $99</Typography>
+                      <Typography color="text.secondary" sx={{ fontSize:"120%" }}>
                         { twoWristBandsDescription }
                       </Typography>
                     </CardContent>
                     <CardMedia
                       sx={{ height: 200,
                             imagePosition: "bottom -60px center",
-                            paddingTop: '100%', // 5:4
-                            margin:'0px 0px 0px 0px' }}
+                            paddingTop: '100%' }}
                       image={DoubleBand}
                       title="Two Pre-paired Wristbands"
                     />
@@ -247,16 +247,15 @@ export default function Page() {
                     sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                   >
                     <CardContent sx={{ flexGrow: 1 }}>
-                      <Typography variant="h6" sx={{ fontSize:35 }} color="text.secondary">One Singular Wristband - $49</Typography>
-                      <Typography color="text.secondary" sx={{ fontSize:15 }}>
+                      <Typography variant="h6" sx={{ fontSize:"250%" }} color="text.secondary">One Singular Wristband - $49</Typography>
+                      <Typography color="text.secondary" sx={{ fontSize:"120%" }}>
                         { oneWristBandDescription }
                       </Typography>
                     </CardContent>
                   <CardMedia
                       sx={{ height: 200,
                             imagePosition: "bottom -60px center",
-                            paddingTop: '100%', // 5:4
-                            margin:'0px 0px 0px 0px' }}
+                            paddingTop: '100%' }}
                       image={SingleBand}
                       title="One Wristband"
                     />
@@ -273,17 +272,17 @@ export default function Page() {
             align="center"
             color="white"
             fontWeight='fontWeightMedium'
-            sx={{ pt:10, textShadow: "0px 1px black", margin:'-60px 0px 0px 0px'}}
+            sx={{ textShadow: "0px 1px black" }}
           >
             Our Story
           </Typography>
-                <Grid container sx={{ pt:3 }}>
-          <Grid item key="form" md={6} sx={{ pl:30, pr:2 }}>
+                <Grid container sx={{ pt:"0.5%" }}>
+          <Grid item key="form" md={6} sx={{ pl:"3%", pr:"0.5%" }}>
           {aboutUs.map((line) => (
-            <Typography align='right' variant="h6" color="white" style={{ margin: "0px 0px 40px 0px", textShadow: "1px 1px 1px black"}}>{ line }</Typography>
+            <Typography align='right' variant="h6" color="white" style={{ margin: "0px 0px 4% 0px", textShadow: "1px 1px 1px black"}}>{ line }</Typography>
           ))}
           </Grid>
-          <Grid item key="title" md={6} sx={{ px:5 }} >
+          <Grid item key="title" md={6} sx={{ px:"2%" }} >
             <ImageList sx={{ height: "auto" }} cols={2}>
               {aboutUsImages.map((item) => (
                 <ImageListItem key={item.img}>
@@ -300,19 +299,19 @@ export default function Page() {
           </Grid>
 
         </div>
-        <div id='team' style={{ margin: "-100px 0px 0px 0px" }}>
+        <div id='team' style={{ margin: "0px 0px 0px 0px" }}>
           <Typography
             component="h3"
             variant="h3"
             align="center"
             color="white"
             fontWeight='fontWeightMedium'
-            sx={{ pt:10, textShadow: "0px 1px black"}}
+            sx={{ textShadow: "0px 1px black"}}
           >
             Meet Our Team
           </Typography>
-          <Container sx={{ py: 3, px:4, bgcolor: 'background' }} maxWidth='xxl'>
-            <Grid container spacing={4} justifyContent='center' sx={{ px: 30 }}>
+          <Container sx={{ py: "1.5%", px:"1%", bgcolor: 'background' }} maxWidth='xxl'>
+            <Grid container spacing={4} justifyContent='center' sx={{ px: "4%" }}>
               {cards.map((card) => (
                 <Grid item key={card.id} xs={12} sm={6} md={3}>
                   <Card
@@ -321,8 +320,7 @@ export default function Page() {
                     <CardMedia
                       sx={{ height: 200,
                             imagePosition: "bottom -60px center",
-                            paddingTop: '100%', // 5:4
-                            margin:'0px 0px 0px 0px' }}
+                            paddingTop: '100%' }}
                       image={card.image}
                       title={card.name}
                     />
@@ -339,9 +337,9 @@ export default function Page() {
             </Grid>
           </Container>
         </div>
-        <div id='contact' style={{ margin: "40px 0px 30px 0px" }}>
+        <div id='contact' style={{ margin: "0px 0px 1% 0px" }}>
         <Grid container>
-        <Grid item key="title" md={6} sx={{ pr:2, pl:30, pt:2 }}>
+        <Grid item key="title" md={6} sx={{ pr:"0.5%", pl:"4%", pt:"0.5%" }}>
           <Typography
          align="right"
             component="h3"
@@ -349,16 +347,16 @@ export default function Page() {
             color="white"
             fontWeight="fontWeightMedium"
             sx={{ pt:10, textShadow: "0px 1px black"}}
-            style={{ margin: "-100px 0px 15px 0px" }}
+            style={{ margin: "-10% 0px 1% 0px" }}
           >
             Contact Us
           </Typography>
-          <Typography align='right' variant="h6" color="white" style={{ margin: "0px 0px 40px 0px", textShadow: "0px 1px black" }}>{ contactUsDescription }</Typography>
+          <Typography align='right' variant="h6" color="white" style={{ margin: "0px 0px 5% 0px", textShadow: "0px 1px black" }}>{ contactUsDescription }</Typography>
           </Grid>
-        <Grid item key="title" md={6} sx={{ pr:30, pl:2, pt:2 }}>
+        <Grid item key="title" md={6} sx={{ pr:"5%", pl:"0.5%", pt:"0.5%" }}>
                   <form action={FORM_ENDPOINT} onSubmit={ handleSubmit }  method="POST" >
           <Grid container spacing={1} justifyContent='center'>
-              <Grid item key="name" md={4} style={{ margin: "0px 0px 0px 0px" }}>
+              <Grid item key="name" md={4}>
                 {/* <label for="name"><Typography color="black" align='left'>Your name</Typography></label> */}
                 <input
                   type="text"
@@ -367,7 +365,7 @@ export default function Page() {
                   required
                 />
               </Grid>
-              <Grid item key="email" md={4} style={{ margin: "0px 0px 0px 0px" }}>
+              <Grid item key="email" md={4}>
                 <input
                   type="text"
                   placeholder="Your email address.."
@@ -375,7 +373,7 @@ export default function Page() {
                   required
                 />
               </Grid>
-              <Grid item key="hear" md={4} style={{ margin: "0px 0px 0px 0px" }}>
+              <Grid item key="hear" md={4}>
                 <input
                   type="text"
                   placeholder="How did you hear about us?"
@@ -383,11 +381,11 @@ export default function Page() {
                   required
                 />
               </Grid>
-              <Grid item key="subject" md={12} style={{ margin: "0px 0px -5px 0px" }}>
+              <Grid item key="subject" md={12}>
                 <textarea
                   placeholder="How can we help you?"
                   name="message"
-                  style={{ height: 200 }}
+                  style={{ height: "300%", margin:"0px 0px 0px 0px" }}
                   required
                 />
               </Grid>
