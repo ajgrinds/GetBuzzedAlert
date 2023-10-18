@@ -21,6 +21,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { themeSettings } from './Theme.js';
 
 import HomeImage from './images/main.jpeg';
+import Logo from './images/logo.png';
 
 import BlakeHeadshot from './images/headshots/blake_togerson.jpg';
 import KellyHeadshot from './images/headshots/kelly_togerson.png';
@@ -200,6 +201,17 @@ export default function Page() {
               >
                 Get Buzzed
               </Typography>
+              {/*<Box
+                style={{
+                  height:500,
+                  backgroundImage: `url(${Logo})`,
+                  // background-size takes height and width but shorthand is one value used for both
+                  backgroundSize: "cover",
+                  // background-position options include center, cover, and more: https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+                  backgroundRepeat: "no-repeat",
+                }}
+              >
+              </Box>*/}
               <Typography variant="h5" align="center" color="text.primary" paragraph 
                 style={{ textShadow: "1px 1px 1px black"}}>
                 { headerSlogan }
@@ -278,12 +290,12 @@ export default function Page() {
             Our Story
           </Typography>
                 <Grid container sx={{ pt:"0.5%" }}>
-          <Grid item key="form" md={6} sx={{ pl:"2%", pr:"2%" }}>
+          <Grid item key="form" md={6} sx={{ pl:"2%", pr:"0.5%" }}>
           {aboutUs.map((line) => (
             <Typography align='right' variant="h6" color="white" style={{ margin: "0px 0px 4% 0px", textShadow: "1px 1px 1px black"}}>{ line }</Typography>
           ))}
           </Grid>
-          <Grid item key="title" md={6} sx={{ px:"2%" }} >
+          <Grid item key="title" md={6} sx={{ pl:"0.5%", pr:"2%" }} >
             <ImageList sx={{ height: "auto" }} cols={2}>
               {aboutUsImages.map((item) => (
                 <ImageListItem key={item.img}>
@@ -340,7 +352,7 @@ export default function Page() {
         </div>
         <div id='contact' style={{ margin: "0px 0px 1% 0px" }}>
         <Grid container>
-        <Grid item key="title" md={6} sx={{ pr:"2%", pl:"4%", pt:"0.5%" }}>
+        <Grid item key="title" md={6} sx={{ pr:"0.5%", pl:"4%", pt:"0.5%" }}>
           <Typography
          align="right"
             component="h3"
@@ -354,7 +366,7 @@ export default function Page() {
           </Typography>
           <Typography align='right' variant="h6" color="white" style={{ margin: "0px 0px 5% 0px", textShadow: "0px 1px black" }}>{ contactUsDescription }</Typography>
           </Grid>
-        <Grid item key="title" md={6} sx={{ pr:"5%", pl:"2%", pt:"1.5%" }}>
+        <Grid item key="title" md={6} sx={{ pr:"5%", pl:"0.5%", pt:"1.5%" }}>
                   <form action={FORM_ENDPOINT} onSubmit={ handleSubmit }  method="POST" >
           <Grid container spacing={1} justifyContent='center'>
               <Grid item key="name" md={4}>
