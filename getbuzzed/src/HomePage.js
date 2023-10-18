@@ -385,7 +385,7 @@ export default function Page() {
                 <textarea
                   placeholder="How can we help you?"
                   name="message"
-                  style={{ height: "300%", margin:"0px 0px 0px 0px" }}
+                  style={{ height: "100%", margin:"0px 0px 16% 0px", resize:"none" }}
                   required
                 />
               </Grid>
