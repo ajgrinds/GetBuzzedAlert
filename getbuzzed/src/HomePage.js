@@ -100,7 +100,7 @@ const aboutUs = ["Six years ago, our journey began when we moved in with my pare
   "Buy time, Get Buzzed."
   ]
 
-const contactUsDescription = "Get in contact with us as we continue to raise funds and build our product. For those interested in investing or preorders please reach out to our CCO and Co-Founder Kelly Togerson by emailing kelly@getbuzzedalert.com"
+const contactUsDescription = "Get in contact with us as we continue to raise funds and build our product. For those interested in investing or preorders, please reach out to our CCO and Co-Founder Kelly Togerson through email: kelly@getbuzzedalert.com"
 
 const footerSlogan = "Buy time and Get Buzzed"
 
@@ -351,22 +351,18 @@ export default function Page() {
           </Container>
         </div>
         <div id='contact' style={{ margin: "0px 0px 1% 0px" }}>
-        <Grid container>
-        <Grid item key="title" md={6} sx={{ pr:"0.5%", pl:"4%", pt:"0.5%" }}>
           <Typography
-         align="right"
+         align="center"
             component="h3"
             variant="h3"
             color="white"
             fontWeight="fontWeightMedium"
             sx={{ pt:10, textShadow: "0px 1px black"}}
-            style={{ margin: "-10% 0px 1% 0px" }}
+            style={{ margin: "-7% 0px 1% 0px" }}
           >
             Contact Us
           </Typography>
-          <Typography align='right' variant="h6" color="white" style={{ margin: "0px 0px 5% 0px", textShadow: "0px 1px black" }}>{ contactUsDescription }</Typography>
-          </Grid>
-          </Grid>
+          <Typography align='center' variant="h6" color="white" style={{ margin: "0% 20% 5% 20%", textShadow: "0px 1px black" }}>{ contactUsDescription }</Typography>
         </div>
       </main>
       {/* Footer */}
