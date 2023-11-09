@@ -100,7 +100,7 @@ const aboutUs = ["Six years ago, our journey began when we moved in with my pare
   "Buy time, Get Buzzed."
   ]
 
-const contactUsDescription = "Get in contact with us as we continue to raise funds and build our product. For those interested in investing or preorders leave your information in the columns provided."
+const contactUsDescription = "Get in contact with us as we continue to raise funds and build our product. For those interested in investing or preorders please reach out to our CCO and Co-Founder Kelly Togerson by emailing kelly@getbuzzedalert.com"
 
 const footerSlogan = "Buy time and Get Buzzed"
 
@@ -365,52 +365,6 @@ export default function Page() {
             Contact Us
           </Typography>
           <Typography align='right' variant="h6" color="white" style={{ margin: "0px 0px 5% 0px", textShadow: "0px 1px black" }}>{ contactUsDescription }</Typography>
-          </Grid>
-        <Grid item key="title" md={6} sx={{ pr:"5%", pl:"0.5%", pt:"1.5%" }}>
-                  <form action={FORM_ENDPOINT} onSubmit={ handleSubmit }  method="POST" >
-          <Grid container spacing={1} justifyContent='center'>
-              <Grid item key="name" md={4}>
-                {/* <label for="name"><Typography color="black" align='left'>Your name</Typography></label> */}
-                <input
-                  type="text"
-                  placeholder="Your name.."
-                  name="name"
-                  required
-                />
-              </Grid>
-              <Grid item key="email" md={4}>
-                <input
-                  type="text"
-                  placeholder="Your email address.."
-                  name="email"
-                  required
-                />
-              </Grid>
-              <Grid item key="hear" md={4}>
-                <input
-                  type="text"
-                  placeholder="How did you hear about us?"
-                  name="How did you hear about us?"
-                  required
-                />
-              </Grid>
-              <Grid item key="subject" md={12}>
-                <textarea
-                  placeholder="How can we help you?"
-                  name="message"
-                  style={{ height: "200px", resize:"none" }}
-                  required
-                />
-              </Grid>
-              <Grid item key="submit" md={3}>
-                <input
-                  type="submit"
-                  value="Send"
-                  style={{ width:"100%", backgroundColor:"#a5b9bc", boxShadow: "2px 2px 2px black" }}
-                />
-              </Grid>
-            </Grid>
-            </form>
           </Grid>
           </Grid>
         </div>
