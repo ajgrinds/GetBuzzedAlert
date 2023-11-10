@@ -21,7 +21,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { themeSettings } from './Theme.js';
 
 import HomeImage from './images/main.jpeg';
-import Logo from './images/logo.png';
+import GetBuzzedLogo from './images/getBuzzedLogo.png';
 
 import BlakeHeadshot from './images/headshots/blake_togerson.jpg';
 import KellyHeadshot from './images/headshots/kelly_togerson.png';
@@ -185,22 +185,22 @@ export default function Page() {
               // background-size takes height and width but shorthand is one value used for both
               backgroundSize: "cover",
               // background-position options include center, cover, and more: https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
-              backgroundPosition: "bottom 20% center",
+              backgroundPosition: "bottom 10% center",
               backgroundRepeat: "no-repeat",
             }}
           >
-            <Container maxWidth="100%">
-              <Typography
-                component="h1"
-                variant="h1"
-                align="center"
-                color="text.priamry"
-                fontWeight='fontWeightMedium'
-                sx={{ pt: 5 }}
-                maxWidth="100%"
-              >
-                Get Buzzed
-              </Typography>
+            <Container maxWidth="100%" sx={{ pt:"5%" }}>
+              <Box
+              component='img'
+              src={GetBuzzedLogo}
+            style={{
+              width:"100%",
+              // background-size takes height and width but shorthand is one value used for both
+              backgroundSize: "cover",
+              // background-position options include center, cover, and more: https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+              backgroundRepeat: "no-repeat",
+            }}
+          />
               {/*<Box
                 style={{
                   height:500,
