@@ -358,7 +358,7 @@ export default function Page() {
             color="white"
             fontWeight="fontWeightMedium"
             sx={{ pt:10, textShadow: "0px 1px black"}}
-            style={{ margin: "-7% 0px 1% 0px" }}
+            style={{ margin: "-3% 0px 1% 0px" }}
           >
             Contact Us
           </Typography>
