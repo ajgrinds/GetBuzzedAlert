@@ -145,7 +145,7 @@ export default function Page() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="fixed" sx={{ bgcolor: 'primary' }}>
+      <AppBar sx={{ bgcolor: 'primary' }}>
         <Toolbar>
           <Stack
               direction="row"
@@ -154,9 +154,6 @@ export default function Page() {
             >
             <Button variant="text" href="#home" color="inherit" style={{textTransform: 'none'}}>
               <Typography variant="h6" color="text.secondary" noWrap>Get Buzzed</Typography>
-            </Button>
-            <Button variant="text" href="#home" color="inherit" style={{textTransform: 'none'}}>
-              <Typography variant="h6" color="text.secondary" noWrap>Home</Typography>
             </Button>
             <Button variant="text" href="#product" color="inherit" style={{textTransform: 'none'}}>
               <Typography variant="h6" color="text.secondary" noWrap>Product</Typography>
@@ -189,7 +186,7 @@ export default function Page() {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <Container maxWidth="100%" sx={{ pt:"5%" }}>
+            <Container maxWidth="100%" sx={{ pt:"70px" }}>
               <Box
               component='img'
               src={GetBuzzedLogo}
@@ -290,7 +287,7 @@ export default function Page() {
             Our Story
           </Typography>
                 <Grid container sx={{ pt:"0.5%" }}>
-          <Grid item key="form" md={6} sx={{ pl:"2%", pr:"0.5%" }}>
+          <Grid item key="form" md={6} sx={{ pl:"2%", pr:"2%" }}>
           {aboutUs.map((line) => (
             <Typography align='right' variant="h6" color="white" style={{ margin: "0px 0px 4% 0px", textShadow: "1px 1px 1px black"}}>{ line }</Typography>
           ))}
@@ -362,7 +359,7 @@ export default function Page() {
           >
             Contact Us
           </Typography>
-          <Typography align='center' variant="h6" color="white" style={{ margin: "0% 20% 5% 20%", textShadow: "0px 1px black" }}>{ contactUsDescription }</Typography>
+          <Typography align='center' variant="h6" color="white" style={{ margin: "0% 15% 5% 15%", textShadow: "0px 1px black" }}>{ contactUsDescription }</Typography>
         </div>
       </main>
       {/* Footer */}
