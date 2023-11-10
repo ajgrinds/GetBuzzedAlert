@@ -176,11 +176,11 @@ export default function Page() {
         <center>
           <Box
             style={{
-              height:770,
+              height:600,
 
               backgroundImage: `url(${HomeImage})`,
               // background-size takes height and width but shorthand is one value used for both
-              backgroundSize: "cover",
+              backgroundSize: "center",
               // background-position options include center, cover, and more: https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
               backgroundPosition: "bottom 10% center",
               backgroundRepeat: "no-repeat",
